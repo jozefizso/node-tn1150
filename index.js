@@ -14,9 +14,9 @@
  *
  */
 
-var unorm = require('unorm')
+const unorm = require('unorm')
 
-var lowerCaseMap = new Map([
+const lowerCaseMap = new Map([
   [0x0000, 0xffff],
   [0x0041, 0x0061],
   [0x0042, 0x0062],
@@ -349,7 +349,7 @@ var lowerCaseMap = new Map([
 ])
 
 function HFSPlusFastUnicodeCompare (str1, str2) {
-  var i, c1, c2
+  let i, c1, c2
 
   for (i = 0; i < Math.min(str1.length, str2.length); i++) {
     c1 = str1.charCodeAt(i)

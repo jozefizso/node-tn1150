@@ -1,8 +1,8 @@
 /* eslint-env mocha */
 
-var unorm = require('unorm')
-var assert = require('assert')
-var tn1150 = require('./')
+const unorm = require('unorm')
+const assert = require('assert')
+const tn1150 = require('./')
 
 describe('TN1150', function () {
   it('.compare', function () {
